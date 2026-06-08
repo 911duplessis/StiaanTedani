@@ -214,6 +214,22 @@ nav.scrolled{background:rgba(9,8,5,.97);backdrop-filter:blur(12px)}
 .ba-label .caption{font-size:14px;font-weight:400;color:rgba(255,255,255,.9);line-height:1.5}
 .ba-card.after .ba-label .tag{color:var(--gold)}
 
+/* ── FOUNDER ── */
+.founder{background:var(--soil);padding:clamp(60px,10vw,140px) clamp(28px,7vw,100px);border-top:1px solid rgba(196,154,58,.1)}
+.founder h2{font-family:'Playfair Display',serif;font-size:clamp(28px,4.2vw,46px);font-weight:700;line-height:1.25;color:var(--ash);margin-bottom:36px;max-width:680px}
+.founder h2 em{font-style:italic;color:var(--gold)}
+.founder-body{max-width:680px;display:flex;flex-direction:column;gap:22px}
+.founder-body p{font-size:15px;color:var(--mid);line-height:1.9;font-weight:300}
+.founder-body strong{color:var(--ash);font-weight:500}
+.founder-body em{color:var(--gold);font-style:italic}
+.founder-tribute{margin-top:60px;max-width:680px;display:grid;grid-template-columns:130px 1fr;gap:28px;align-items:center;background:var(--deep);border:1px solid rgba(196,154,58,.18);padding:28px}
+.founder-tribute img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%;display:block;filter:grayscale(15%) contrast(1.05)}
+.tribute-tag{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:var(--ember);margin-bottom:10px}
+.founder-tribute p{font-size:14px;color:var(--mid);line-height:1.8;font-weight:300;margin:0}
+.founder-tribute strong{color:var(--ash);font-weight:500}
+.founder-tribute em{color:var(--gold);font-style:italic}
+@media(max-width:600px){.founder-tribute{grid-template-columns:1fr;text-align:center}.founder-tribute img{width:96px;margin:0 auto}}
+
 /* ── TRUTH ── */
 .truth{padding:clamp(80px,12vw,160px) clamp(28px,7vw,100px);position:relative;overflow:hidden}
 .truth::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(to right,transparent,var(--ember),transparent)}
@@ -516,6 +532,27 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text
         <div class="tag">After · Rebuilt</div>
         <div class="caption">Same man. Different architecture. Still becoming.</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOUNDER ══ -->
+<section class="founder" id="founder">
+  <div class="eyebrow reveal">Beyond the highlight reel</div>
+  <h2 class="reveal">The years this story<br>almost didn't <em>survive</em> to tell.</h2>
+  <div class="founder-body">
+    <p class="reveal">There was a stretch of years the photos above can only hint at. A business that didn't survive a season no one could plan for. A home that disappeared. Possessions, routines, certainty — gone, faster than I could track. I spent time in hospital fighting my way back from places that don't always let you return, and time after that with nothing: no roof, no plan, no map back to who I'd been.</p>
+    <p class="reveal d1">What carried me through wasn't a strategy. It was strangers who had no reason to help and helped anyway. An old man in a hospital ward, tied to his bed and thirsty — I gave him water because it was the only thing I could do that day. Days later, in a way I never expected and still can't fully explain, that small act came back around and helped save my own life. A man outside a shop asked where I was headed, and simply drove me there. A family took me in when I had nothing to offer but my word — and kept it anyway.</p>
+    <p class="reveal d2">I lost relationships in that chapter that I thought were permanent. Not because anyone was the villain of the story — collapse doesn't ask permission, and it doesn't spare the people standing closest to you when it lands. Everyone involved, including me, was doing the best they could with what they had left to do it with. I'm choosing to hold that without bitterness, because bitterness is one more weight I can't afford to carry uphill.</p>
+    <p class="reveal d3">What rebuilt me wasn't a single turning point — it was small, repeated proof that I was still capable of <em>something</em>. A skill learned from nothing. A debt repaid. A hand reached back to someone standing exactly where I once stood. Slowly: a roof again. A relationship with my mother and my sister, restored. Work — from people who'd known me at my lowest and chose to trust me anyway. A craft: I taught myself to build. <strong>This very page was built by the same hands that once had nothing left to build with.</strong></p>
+    <p class="reveal d4">I'm not finished becoming. But I am here — present, working, reachable — and there was a year where that alone would have sounded impossible. That's the real foundation under everything else on this page: not the wins, but the proof that a person can lose almost everything and still choose, one ordinary day at a time, to rebuild.</p>
+  </div>
+
+  <div class="founder-tribute reveal d5">
+    <img src="https://raw.githubusercontent.com/911duplessis/StiaanTedani/main/mike.jpg" alt="Mike — friend who stood by me through the lowest years" loading="lazy" decoding="async">
+    <div>
+      <div class="tribute-tag">Standing with · Mike</div>
+      <p>Mike is one of the people who stood with me when there was nothing in it for him. Right now, he's the one fighting — recovering from a heart attack, in rehab, having lost his home and much of what he owns. I know exactly what that road costs, because I have walked it. <strong>This page carries his name because the people who show up for you deserve to be shown up for in return.</strong> <em>Mike — this one's for you. Believe.</em></p>
     </div>
   </div>
 </section>

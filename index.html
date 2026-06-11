@@ -367,6 +367,91 @@ nav.scrolled{background:rgba(9,8,5,.97);backdrop-filter:blur(12px)}
 .tf-final{margin-top:48px;font-size:15px;color:var(--smoke);line-height:1.9;font-weight:300;font-style:italic}
 .tf-final em{color:var(--gold)}
 
+/* ── ARC PHOTOS ── */
+.arc-img-break{margin:28px 0;position:relative;overflow:hidden}
+.arc-img-break img{width:100%;max-width:680px;display:block;filter:grayscale(18%) contrast(1.08);opacity:.9}
+.arc-img-break figcaption{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.28em;text-transform:uppercase;color:var(--smoke);margin-top:8px;padding-left:2px}
+.arc-img-break.arc-img-evidence img{filter:grayscale(35%) sepia(20%) contrast(1.1)}
+.arc-two-col{display:grid;grid-template-columns:1fr 1fr;gap:3px;max-width:680px;margin:28px 0}
+.arc-two-col img{width:100%;display:block;aspect-ratio:1;object-fit:cover;object-position:center top;filter:grayscale(20%) contrast(1.05)}
+@media(max-width:500px){.arc-two-col{grid-template-columns:1fr}}
+.arc-covenant{margin-top:36px;max-width:680px;position:relative;overflow:hidden}
+.arc-covenant img{width:100%;display:block;filter:sepia(30%) contrast(1.02) brightness(.95)}
+.arc-covenant-caption{padding:20px 0 4px;font-family:'Playfair Display',serif;font-style:italic;font-size:14px;color:var(--smoke)}
+
+/* ── CHILDREN ── */
+.children-section{background:var(--black);padding:clamp(60px,10vw,140px) clamp(28px,7vw,100px);border-top:1px solid rgba(196,154,58,.1)}
+.ch-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4.5vw,52px);font-weight:700;line-height:1.2;color:var(--ash);max-width:740px;margin-bottom:20px}
+.ch-title em{font-style:italic;color:var(--gold)}
+.ch-lead{font-size:15px;color:var(--mid);line-height:1.9;max-width:640px;margin-bottom:64px;font-weight:300}
+.kiralee-showcase{margin-bottom:80px}
+.kiralee-hero{position:relative;overflow:hidden;max-width:1000px;aspect-ratio:4/3;margin-bottom:3px}
+.kiralee-hero img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.kiralee-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(9,8,5,.95) 0%,rgba(9,8,5,.3) 60%,transparent 100%)}
+.kiralee-hero-text{position:absolute;bottom:0;left:0;right:0;padding:32px 36px}
+.kiralee-name{font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,44px);font-weight:900;color:var(--ash);line-height:1;margin-bottom:6px}
+.kiralee-name em{font-style:italic;color:var(--gold)}
+.kiralee-sub{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:rgba(237,232,220,.6);margin-bottom:12px}
+.kiralee-medals{display:flex;gap:16px;flex-wrap:wrap}
+.medal-tag{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(196,154,58,.35);padding:5px 12px}
+.kiralee-gallery{display:grid;grid-template-columns:1fr 1fr;gap:3px;max-width:1000px}
+.kiralee-gallery img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top;display:block;filter:grayscale(10%) contrast(1.05)}
+@media(max-width:600px){.kiralee-gallery{grid-template-columns:1fr}.kiralee-hero-text{padding:20px 20px}}
+.kiaan-row{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:80px;max-width:1000px}
+@media(max-width:720px){.kiaan-row{grid-template-columns:1fr}}
+.kiaan-image{position:relative;overflow:hidden;aspect-ratio:3/4}
+.kiaan-image img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.kiaan-content{}
+.kiaan-name{font-family:'Playfair Display',serif;font-size:clamp(22px,3.5vw,38px);font-weight:900;color:var(--ash);line-height:1;margin-bottom:8px}
+.kiaan-name em{font-style:italic;color:var(--ember)}
+.kiaan-tag{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:var(--ember);margin-bottom:16px}
+.kiaan-desc{font-size:15px;color:var(--mid);line-height:1.9;font-weight:300}
+.children-lower{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1000px;align-items:start}
+@media(max-width:640px){.children-lower{grid-template-columns:1fr}}
+.kearstin-card{position:relative;overflow:hidden}
+.kearstin-card img{width:100%;display:block;object-fit:cover;aspect-ratio:4/5;object-position:center top;filter:grayscale(10%) contrast(1.05) brightness(.95)}
+.kearstin-overlay{position:absolute;bottom:0;left:0;right:0;padding:20px;background:linear-gradient(to top,rgba(9,8,5,.9),transparent)}
+.kearstin-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;font-style:italic;color:var(--ash)}
+.kearstin-role{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-top:4px}
+.book-card{background:var(--deep);border:1px solid rgba(196,154,58,.15);padding:0;overflow:hidden}
+.book-card img{width:100%;display:block;aspect-ratio:4/5;object-fit:cover;object-position:center top}
+.book-card-body{padding:20px 22px}
+.book-card-title{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--ash);margin-bottom:6px}
+.book-card-sub{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.22em;text-transform:uppercase;color:var(--ember);margin-bottom:10px}
+.book-card-desc{font-size:13px;color:var(--smoke);line-height:1.75;font-weight:300}
+.children-proud{margin-top:40px;max-width:1000px;padding:20px 0;border-top:1px solid rgba(196,154,58,.15)}
+.children-proud p{font-family:'Playfair Display',serif;font-size:15px;font-style:italic;color:var(--smoke);line-height:1.7}
+.children-proud em{color:var(--gold)}
+
+/* ── TRUST CIRCLE ── */
+.trust-circle{background:var(--soil);padding:clamp(60px,10vw,140px) clamp(28px,7vw,100px);border-top:1px solid rgba(196,154,58,.1)}
+.trust-circle h2{font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,44px);font-weight:700;line-height:1.2;color:var(--ash);max-width:640px;margin-bottom:16px}
+.trust-circle h2 em{font-style:italic;color:var(--gold)}
+.trust-lead{font-size:15px;color:var(--mid);line-height:1.9;max-width:640px;margin-bottom:56px;font-weight:300}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1100px}
+@media(max-width:800px){.trust-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.trust-grid{grid-template-columns:1fr}}
+.trust-card{background:var(--deep);border:1px solid rgba(196,154,58,.12);overflow:hidden;transition:border-color .3s}
+.trust-card:hover{border-color:rgba(196,154,58,.4)}
+.trust-photo{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;display:block;filter:grayscale(15%) contrast(1.05)}
+.trust-photo-placeholder{width:100%;aspect-ratio:4/5;background:var(--black);display:flex;align-items:center;justify-content:center}
+.trust-photo-placeholder span{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.22em;text-transform:uppercase;color:var(--smoke)}
+.trust-card-body{padding:18px 20px}
+.trust-name{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--ash);margin-bottom:3px}
+.trust-role{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.28em;text-transform:uppercase;color:var(--ember);margin-bottom:10px}
+.trust-desc{font-size:13px;color:var(--smoke);line-height:1.75;font-weight:300}
+.trust-desc em{color:var(--gold);font-style:italic}
+
+/* ── VAN EEDEN LEGACY ── */
+.vaneeden-legacy{margin-top:64px;max-width:1100px;background:var(--deep);border:1px solid rgba(196,154,58,.2);padding:36px 40px}
+.vl-title{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.35em;text-transform:uppercase;color:var(--ember);margin-bottom:18px}
+.vl-h{font-family:'Playfair Display',serif;font-size:clamp(20px,3vw,28px);font-weight:700;color:var(--ash);margin-bottom:14px}
+.vl-h em{font-style:italic;color:var(--gold)}
+.vl-body{font-size:14px;color:var(--mid);line-height:1.95;font-weight:300;max-width:680px;margin-bottom:24px}
+.vl-names{display:flex;flex-wrap:wrap;gap:12px}
+.vl-name-chip{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(196,154,58,.25);padding:6px 14px}
+@media(max-width:600px){.vaneeden-legacy{padding:24px 20px}}
+
 /* ── FOOTER ── */
 footer{padding:36px clamp(28px,7vw,100px);border-top:1px solid rgba(196,154,58,.12);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
 .footer-brand{font-family:'Playfair Display',serif;font-style:italic;font-size:1.3rem;color:var(--gold)}
@@ -631,7 +716,12 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text
 <!-- ══ ARC (DEEP NARRATIVE) ══ -->
 <section class="arc-section" id="arc">
   <div class="eyebrow reveal">The depth · Unfiltered</div>
-  <h2 style="font-family:'Playfair Display',serif;font-size:clamp(28px,4.2vw,46px);font-weight:700;line-height:1.2;color:var(--ash);max-width:700px;margin-bottom:64px" class="reveal">From collapse to clarity —<br><em>the structure underneath.</em></h2>
+  <h2 style="font-family:'Playfair Display',serif;font-size:clamp(28px,4.2vw,46px);font-weight:700;line-height:1.2;color:var(--ash);max-width:700px;margin-bottom:48px" class="reveal">From collapse to clarity —<br><em>the structure underneath.</em></h2>
+
+  <figure class="arc-img-break reveal" style="margin-bottom:64px">
+    <img src="https://raw.githubusercontent.com/911duplessis/StiaanTedani/main/stiaan-before.jpg" alt="Stiaan — before everything" loading="lazy" decoding="async">
+    <figcaption>Before everything. The beginning of the story — not the end of it.</figcaption>
+  </figure>
 
   <div class="arc-chapters">
 
@@ -649,6 +739,10 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text
         </ul>
         <p>And yet something unusual happened inside that collapse. <strong>I started observing patterns instead of resisting them.</strong> Not because I was strong. But because I had no energy left to fight reality. That is where the shift began.</p>
       </div>
+      <figure class="arc-img-break arc-img-evidence">
+        <img src="https://raw.githubusercontent.com/911duplessis/StiaanTedani/main/stiaan-injury.jpg" alt="The cost — documented" loading="lazy" decoding="async">
+        <figcaption>The cost — documented. Somewhere during the collapse years.</figcaption>
+      </figure>
     </div>
 
     <div class="arc-divider"></div>
@@ -657,7 +751,7 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text
       <div class="arc-chapter-eyebrow">The one structure that held</div>
       <h3>The Mother Architecture</h3>
       <div class="arc-prose">
-        <p>At the lowest point of system collapse, there is usually one remaining structure that holds identity together. For me, that structure was my mother. Not as an emotional concept — but as a real operational support system.</p>
+        <p>At the lowest point of system collapse, there is usually one remaining structure that holds identity together. For me, that structure was my mother — <strong>Joey Mary</strong>. The love of my life. Not as an emotional concept — but as a real, living operational support system who chose to hold the door open when every other door had closed.</p>
         <ul class="arc-fragments">
           <li>Shelter when there was none</li>
           <li>Food when systems failed</li>
@@ -683,6 +777,10 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text
           <p>The difference this time: I stopped attaching identity to outcome. And started attaching identity to <em>process.</em> That one shift changed the architecture of every decision that followed.</p>
         </div>
       </div>
+      <figure class="arc-img-break">
+        <img src="https://raw.githubusercontent.com/911duplessis/StiaanTedani/main/stiaan-cctv.jpg" alt="Working during the reconstruction — petrol station, night shift" loading="lazy" decoding="async">
+        <figcaption>Reconstruction didn't look glamorous. It looked like this — wet, working, showing up at 2 a.m. when no one was watching.</figcaption>
+      </figure>
     </div>
 
     <div class="arc-divider"></div>
@@ -691,10 +789,10 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text
       <div class="arc-chapter-eyebrow">Not all endings were permanent</div>
       <h3>The Return of Relationships</h3>
       <div class="arc-prose">
-        <p>Not all relationships ended in rupture. Some returned. Some healed. Some evolved into something stronger for having survived the break. A key reconnection happened with a mentor — a figure who had once carried me through early business development, and who I had failed to honour properly during the collapse years.</p>
-        <p>The message I sent was simple: <em>"I'm sorry. And thank you."</em> The response was immediate — no resentment, no accounting of past damage, no ledger. Just forward movement.</p>
+        <p>Not all relationships ended in rupture. Some returned. Some healed. Some evolved into something stronger for having survived the break. A key reconnection happened with <strong>Stefan Van Eeden</strong> — Oom Stefan — a man who had opened the very first door in business before I had earned it. The one who chose the name "Prime Turf." The one who believed in me when the evidence said otherwise. And the one I had failed to honour properly during the collapse years.</p>
+        <p>The message I sent was simple: <em>"I'm sorry. And thank you."</em> The response was immediate — no resentment, no accounting of past damage, no ledger. Just forward movement. That is the nature of a real mentor. That message opened the door to everything Prime Turf became.</p>
         <div class="arc-insight">
-          <p><em>Real relationships do not store debt. They store truth.</em></p>
+          <p><em>Real relationships do not store debt. They store truth.</em> Stefan Van Eeden proved that.</p>
         </div>
       </div>
     </div>
@@ -724,6 +822,129 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text
           <li>Emotion became data</li>
         </ul>
         <p>Life stopped being random. <strong>It became readable.</strong> And once you can read a system — even a broken one — you can redesign it. That is the foundation of everything I build now.</p>
+      </div>
+    </div>
+
+    <div class="arc-divider"></div>
+
+    <div class="arc-chapter reveal d5">
+      <div class="arc-chapter-eyebrow">Covenant — not obligation</div>
+      <h3>The Woman Who Walked Through It</h3>
+      <div class="arc-prose">
+        <p>There is a distinction between a relationship ending and a relationship failing. Not every ending is a failure. Not every departure signals betrayal. The woman I built a life with — and three children with — did the best she could. And I did the best I could. Both of those things can be true simultaneously, while still arriving at a point of separation.</p>
+        <p>She is not the villain of this story. She is the mother of Kira-Lee, Kiaan, and Kearstin. <strong>For that alone, she carries permanent honour.</strong></p>
+        <p><em>"She did the best she could."</em> I mean that without condition, without revision.</p>
+      </div>
+      <figure class="arc-covenant">
+        <img src="https://raw.githubusercontent.com/911duplessis/StiaanTedani/main/covenant.jpg" alt="Covenant — a moment worth remembering" loading="lazy" decoding="async">
+        <div class="arc-covenant-caption">A moment worth remembering — for what it represented, not what it became.</div>
+      </figure>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ CHILDREN ══ -->
+<section class="children-section">
+
+  <div class="ch-title reveal">
+    <div class="eyebrow" style="margin-bottom:16px">The next generation · The living proof</div>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(28px,4.2vw,46px);font-weight:700;line-height:1.2;color:var(--ash);max-width:700px;margin-bottom:0">Three children —<br><em>three distinct architectures</em> of becoming.</h2>
+  </div>
+
+  <p class="ch-lead reveal">They didn't grow up around perfect. They grew up around real. And real, it turns out, is the best teacher available.</p>
+
+  <!-- KIRA-LEE HERO -->
+  <div class="kiralee-showcase reveal">
+    <div class="kiralee-hero">
+      <img src="https://raw.githubusercontent.com/911duplessis/StiaanTedani/main/kiralee-gold.jpg" alt="Kira-Lee du Plessis — Gauteng Primary Schools Finals" loading="lazy" decoding="async">
+      <div class="kiralee-hero-overlay"></div>
+      <div class="kiralee-hero-text">
+        <div class="kiralee-sub">Gauteng Primary Schools Finals · 15 Districts · Top Athletes</div>
+        <div class="kiralee-name">Kira-Lee <em>du Plessis</em></div>
+        <div class="kiralee-medals">
+          <span class="medal-tag">District Champion</span>
+          <span class="medal-tag">Run With Heart</span>
+          <span class="medal-tag">One Warrior</span>
+          <span class="medal-tag">Pappa's Pride</span>
+        </div>
+      </div>
+    </div>
+    <div class="kiralee-gallery">
+      <img src="https://raw.githubusercontent.com/911duplessis/StiaanTedani/main/kiralee-hurdles.jpg" alt="Kira-Lee clearing hurdles — action" loading="lazy" decoding="async">
+      <img src="https://raw.githubusercontent.com/911duplessis/StiaanTedani/main/kiralee-champ.jpg" alt="Kira-Lee — Gauteng School Sport District Championship" loading="lazy" decoding="async">
+    </div>
+  </div>
+
+  <!-- KIAAN ROW -->
+  <div class="kiaan-row reveal d1">
+    <div class="kiaan-image">
+      <img src="https://raw.githubusercontent.com/911duplessis/StiaanTedani/main/kiaan-running.jpg" alt="Kiaan du Plessis — ASA 2025 Rising Star" loading="lazy" decoding="async">
+    </div>
+    <div class="kiaan-content">
+      <div class="kiaan-tag">ASA 2025 · Rising Star · Next Big Thing</div>
+      <div class="kiaan-name">Kiaan <em>du Plessis</em></div>
+      <p class="kiaan-desc">He runs like he already knows where he is going. Bib #J40531 at the ASA 2025 nationals — fire on the track, composure off it. At his age, that combination is rare. He didn't inherit calm. He built it by watching what pressure looks like when it's not flinched at.</p>
+      <p class="kiaan-desc" style="margin-top:14px">The next big thing. Watch the name.</p>
+    </div>
+  </div>
+
+  <!-- LOWER ROW: KEARSTIN + BOOK -->
+  <div class="children-lower reveal d2">
+    <div class="kearstin-card">
+      <img src="https://raw.githubusercontent.com/911duplessis/StiaanTedani/main/stiaan-kearstin.jpg" alt="Stiaan and Kearstin — laughing together" loading="lazy" decoding="async">
+      <div class="kearstin-overlay">
+        <div class="kearstin-name">Kearstin</div>
+        <div class="kearstin-role">The Joy. The Light. The smallest one who fills the most space.</div>
+      </div>
+    </div>
+    <div class="book-card">
+      <img src="https://raw.githubusercontent.com/911duplessis/StiaanTedani/main/turning-point-book.jpg" alt="The Simulation Ends Here — Stiaan du Plessis book" loading="lazy" decoding="async">
+      <div class="book-card-body">
+        <div class="book-card-sub">Coming · The book</div>
+        <div class="book-card-title">The Simulation Ends Here</div>
+        <p class="book-card-desc">From collapse to clarity. Co-produced with LET ME-GET IT &amp; MONERGY FOUNDATION. Three children on the cover. That was never a coincidence — they were always the reason the story needed to be told.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="children-proud reveal d3">
+    <p>Three children who never stopped believing in a father even when the father was still figuring out how to believe in himself. The greatest honour of this life — not the medals, not the business — <em>them.</em></p>
+  </div>
+
+</section>
+
+<!-- ══ TRUST CIRCLE ══ -->
+<section class="trust-circle">
+  <h2 class="reveal">The people who held the <em>thread.</em></h2>
+  <p class="trust-lead reveal">Before the rebuild. Before the clarity. Before the architecture. There were people. Real people who stayed, showed up, and refused to let the story end at collapse.</p>
+
+  <div class="trust-grid">
+
+    <div class="trust-card reveal">
+      <div class="trust-photo-placeholder"><span>Joey Mary</span></div>
+      <div class="trust-card-body">
+        <div class="trust-name">Joey Mary</div>
+        <div class="trust-role">Mother · Foundation · First Safe Ground</div>
+        <p class="trust-desc">The one who provided shelter when there was none. Food when systems failed. A computer that became the first gateway back into structure. <em>"She held the door open when every other door had closed."</em> The love of my life — in the truest, most structural meaning of love.</p>
+      </div>
+    </div>
+
+    <div class="trust-card reveal d1">
+      <img src="https://raw.githubusercontent.com/911duplessis/StiaanTedani/main/elanza.jpg" alt="Elanza — Stiaan's sister" loading="lazy" decoding="async" class="trust-photo">
+      <div class="trust-card-body">
+        <div class="trust-name">Elanza</div>
+        <div class="trust-role">Sister · First Professional Believer</div>
+        <p class="trust-desc">She believed in the professional version of Stiaan before the professional version of Stiaan existed again. That kind of belief — the kind that precedes evidence — is the rarest form of support there is. <em>She saw the architecture inside the rubble.</em></p>
+      </div>
+    </div>
+
+    <div class="trust-card reveal d2">
+      <img src="https://raw.githubusercontent.com/911duplessis/StiaanTedani/main/bishop.jpg" alt="Bishop — turning-point figure" loading="lazy" decoding="async" class="trust-photo">
+      <div class="trust-card-body">
+        <div class="trust-name">The Bishop</div>
+        <div class="trust-role">Turning-Point Shelter · Structural Grace</div>
+        <p class="trust-desc">There was a period when practical shelter became spiritual shelter — and the two could not be separated. The Bishop's project became more than housing. It became <em>reorientation</em> — a reminder that structure can come from grace, not just ambition.</p>
       </div>
     </div>
 
@@ -835,27 +1056,49 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text
       <div class="pt-person-photo">
         <div class="pt-person-photo-placeholder">Photo<br>coming</div>
       </div>
-      <div class="pt-person-name">Leon van Eeden</div>
-      <div class="pt-person-role">Operational Leadership</div>
-      <p class="pt-person-bio">Operational anchor and strategic execution driver. The force behind Prime Turf's on-the-ground standards and growth direction.</p>
+      <div class="pt-person-name">Stefan van Eeden</div>
+      <div class="pt-person-role">Founding Mentor · The One Who Named It</div>
+      <p class="pt-person-bio">The man who opened the first door. Long before Prime Turf had a name, Stefan Van Eeden had the vision — he chose "Prime Turf" as the name, built the original ArtGrassPro foundation, and later extended the reconnection that became this chapter. He didn't just build a business. He demonstrated what a mentor with no ledger looks like.</p>
     </div>
     <div class="pt-person reveal d1">
       <div class="pt-person-photo">
         <div class="pt-person-photo-placeholder">Photo<br>coming</div>
       </div>
-      <div class="pt-person-name">Mechanne van Eeden</div>
-      <div class="pt-person-role">Structure & Governance</div>
-      <p class="pt-person-bio">Structural stability and consistency framework. Ensures the systems hold, the governance is clear, and the standard never drifts.</p>
+      <div class="pt-person-name">Leon van Eeden</div>
+      <div class="pt-person-role">Operational Leadership · Leads & Execution</div>
+      <p class="pt-person-bio">Operational anchor and boots-on-the-ground execution driver. Leon runs the lead pipeline and standards delivery — the force behind Prime Turf's on-the-ground growth.</p>
     </div>
     <div class="pt-person reveal d2">
       <div class="pt-person-photo">
         <div class="pt-person-photo-placeholder">Photo<br>coming</div>
       </div>
+      <div class="pt-person-name">Mechanne van Eeden</div>
+      <div class="pt-person-role">Structure &amp; Governance</div>
+      <p class="pt-person-bio">Structural stability and consistency framework. Ensures the systems hold, the governance is clear, and the standard never drifts.</p>
+    </div>
+    <div class="pt-person reveal d3">
+      <div class="pt-person-photo">
+        <div class="pt-person-photo-placeholder">Photo<br>coming</div>
+      </div>
       <div class="pt-person-name">Annelise van Eeden</div>
-      <div class="pt-person-role">Operational Backbone</div>
-      <p class="pt-person-bio">Foundational support and resilience driver. The quiet architecture behind consistency — present where it counts, steady when it matters.</p>
+      <div class="pt-person-role">Stefan's Wife · Backbone of Structure</div>
+      <p class="pt-person-bio">Stefan's wife and the quiet operational backbone of the Van Eeden household and business ecosystem. The mother-figure of the structure — present where it counts, steady when it matters.</p>
     </div>
   </div>
+
+  <div class="vaneeden-legacy reveal d4">
+    <div class="vl-title">Legacy recognition</div>
+    <h3 class="vl-h">The Van Eeden <em>Legacy</em></h3>
+    <p class="vl-body">There are families that show up once. And there are families that show up across time — in different chapters, at different levels of need, without keeping score. The Van Eeden family is the latter. Stefan opened the door. Annelise held the structure. Leon and Mechanne carried the ground-level execution. Together, they represent something that cannot be built from a system design document: generational trust applied in real time.</p>
+    <p class="vl-body">This section is not a business credit. It is a record. A permanent acknowledgement that before architecture, before narrative, before Prime Turf became what it is — there was a family that believed the business was worth building, and a man worth working with.</p>
+    <div class="vl-names">
+      <span class="vl-name-chip">Stefan van Eeden</span>
+      <span class="vl-name-chip">Annelise van Eeden</span>
+      <span class="vl-name-chip">Leon van Eeden</span>
+      <span class="vl-name-chip">Mechanne van Eeden</span>
+    </div>
+  </div>
+
 </section>
 
 <!-- ══ PROCESS ══ -->

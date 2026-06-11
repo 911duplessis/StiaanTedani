@@ -296,6 +296,77 @@ nav.scrolled{background:rgba(9,8,5,.97);backdrop-filter:blur(12px)}
 .info-block .ib-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--ember);margin-bottom:6px}
 .info-block .ib-value{font-size:15px;color:var(--ash);font-weight:300;line-height:1.6}
 
+/* ── ARC (DEEP NARRATIVE) ── */
+.arc-section{background:var(--black);padding:clamp(60px,10vw,140px) clamp(28px,7vw,100px)}
+.arc-chapters{display:flex;flex-direction:column;gap:80px;max-width:760px}
+.arc-chapter-eyebrow{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.35em;text-transform:uppercase;color:var(--ember);margin-bottom:16px;display:flex;align-items:center;gap:12px}
+.arc-chapter-eyebrow::before{content:'';display:block;width:18px;height:1px;background:var(--ember);flex-shrink:0}
+.arc-chapter h3{font-family:'Playfair Display',serif;font-size:clamp(20px,2.8vw,30px);font-weight:700;font-style:italic;color:var(--ash);margin-bottom:20px;line-height:1.3}
+.arc-prose{display:flex;flex-direction:column;gap:16px}
+.arc-prose p{font-size:15px;color:var(--mid);line-height:1.95;font-weight:300}
+.arc-prose strong{color:var(--ash);font-weight:500}
+.arc-prose em{color:var(--gold);font-style:italic}
+.arc-fragments{list-style:none;padding:0;display:flex;flex-direction:column;gap:8px;margin:12px 0 12px 0;border-left:2px solid rgba(196,154,58,.2);padding-left:20px}
+.arc-fragments li{font-family:'Barlow',sans-serif;font-size:14px;font-weight:300;color:var(--smoke);line-height:1.7}
+.arc-fragments li::before{content:'—\00a0\00a0';color:var(--ember)}
+.arc-insight{margin-top:20px;padding:20px 24px;background:var(--deep);border-left:2px solid var(--gold)}
+.arc-insight p{font-family:'Playfair Display',serif;font-size:15px;font-style:italic;color:var(--ash);line-height:1.7;font-weight:400}
+.arc-divider{width:40px;height:1px;background:rgba(196,154,58,.25);margin:0 auto}
+@media(max-width:600px){.arc-chapters{gap:56px}}
+
+/* ── PRIMETURF ── */
+.primeturf{background:var(--soil);padding:clamp(60px,10vw,140px) clamp(28px,7vw,100px);border-top:1px solid rgba(196,154,58,.1)}
+.primeturf h2{font-family:'Playfair Display',serif;font-size:clamp(28px,4.2vw,46px);font-weight:700;line-height:1.2;color:var(--ash);margin-bottom:16px}
+.primeturf h2 em{font-style:italic;color:var(--gold)}
+.pt-lead{font-size:15px;color:var(--mid);line-height:1.9;font-weight:300;max-width:680px;margin-bottom:56px}
+.pt-layers{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:64px}
+@media(max-width:720px){.pt-layers{grid-template-columns:1fr}}
+.pt-layer{background:var(--deep);padding:32px 28px;border-top:2px solid transparent;transition:border-color .3s}
+.pt-layer:nth-child(1){border-top-color:var(--ember)}
+.pt-layer:nth-child(2){border-top-color:var(--gold)}
+.pt-layer:nth-child(3){border-top-color:rgba(196,154,58,.4)}
+.pt-layer-tag{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.35em;text-transform:uppercase;color:var(--ember);margin-bottom:12px}
+.pt-layer h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--ash);margin-bottom:14px;font-style:italic}
+.pt-layer ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:7px}
+.pt-layer ul li{font-size:13px;color:var(--smoke);line-height:1.6;padding-left:14px;position:relative}
+.pt-layer ul li::before{content:'→';position:absolute;left:0;color:var(--ember);font-size:10px;top:4px}
+.pt-principle{background:var(--deep);border:1px solid rgba(196,154,58,.18);padding:28px 32px;max-width:760px;margin-bottom:64px}
+.pt-principle p{font-family:'Playfair Display',serif;font-size:18px;font-style:italic;color:var(--ash);line-height:1.65}
+.pt-principle p em{color:var(--gold)}
+.pt-dashboard-link{display:inline-flex;align-items:center;gap:10px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid rgba(196,154,58,.3);padding:12px 20px;margin-bottom:64px;transition:border-color .3s,color .3s}
+.pt-dashboard-link:hover{color:var(--ash);border-color:rgba(196,154,58,.7)}
+.pt-dashboard-link::before{content:'↗';font-size:14px}
+.pt-people-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.32em;text-transform:uppercase;color:var(--ember);margin-bottom:32px;display:flex;align-items:center;gap:12px}
+.pt-people-label::before{content:'';display:block;width:20px;height:1px;background:var(--ember)}
+.pt-people-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:900px}
+@media(max-width:680px){.pt-people-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:400px){.pt-people-grid{grid-template-columns:1fr}}
+.pt-person{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.pt-person-photo{width:100%;aspect-ratio:1;background:var(--deep);border:1px solid rgba(196,154,58,.15);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.pt-person-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:grayscale(20%) contrast(1.05)}
+.pt-person-photo-placeholder{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;color:var(--smoke);text-transform:uppercase;text-align:center;padding:20px}
+.pt-person-name{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--ash)}
+.pt-person-role{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--ember)}
+.pt-person-bio{font-size:13px;color:var(--smoke);line-height:1.7;font-weight:300}
+
+/* ── TEDANI FIELD ── */
+.tedani-field{background:var(--black);padding:clamp(60px,10vw,140px) clamp(28px,7vw,100px);border-top:1px solid rgba(196,154,58,.08);text-align:center}
+.tf-inner{max-width:680px;margin:0 auto}
+.tf-inner h2{font-family:'Playfair Display',serif;font-size:clamp(24px,3.8vw,40px);font-weight:700;font-style:italic;color:var(--ash);margin-bottom:32px;line-height:1.3}
+.tf-inner h2 em{color:var(--gold)}
+.tf-prose{display:flex;flex-direction:column;gap:18px;text-align:left;margin-bottom:40px}
+.tf-prose p{font-size:15px;color:var(--mid);line-height:1.95;font-weight:300}
+.tf-prose strong{color:var(--ash);font-weight:500}
+.tf-quote{border:1px solid rgba(196,154,58,.18);padding:24px 32px;margin:24px 0;text-align:left}
+.tf-quote p{font-family:'Playfair Display',serif;font-size:16px;font-style:italic;color:var(--ash);line-height:1.7}
+.tf-pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:40px;text-align:left}
+@media(max-width:500px){.tf-pillars{grid-template-columns:1fr}}
+.tf-pillar{background:var(--deep);padding:22px 24px}
+.tf-pillar-word{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;font-style:italic;color:var(--gold);margin-bottom:6px}
+.tf-pillar-meaning{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--smoke)}
+.tf-final{margin-top:48px;font-size:15px;color:var(--smoke);line-height:1.9;font-weight:300;font-style:italic}
+.tf-final em{color:var(--gold)}
+
 /* ── FOOTER ── */
 footer{padding:36px clamp(28px,7vw,100px);border-top:1px solid rgba(196,154,58,.12);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
 .footer-brand{font-family:'Playfair Display',serif;font-style:italic;font-size:1.3rem;color:var(--gold)}
@@ -557,6 +628,108 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text
   </div>
 </section>
 
+<!-- ══ ARC (DEEP NARRATIVE) ══ -->
+<section class="arc-section" id="arc">
+  <div class="eyebrow reveal">The depth · Unfiltered</div>
+  <h2 style="font-family:'Playfair Display',serif;font-size:clamp(28px,4.2vw,46px);font-weight:700;line-height:1.2;color:var(--ash);max-width:700px;margin-bottom:64px" class="reveal">From collapse to clarity —<br><em>the structure underneath.</em></h2>
+
+  <div class="arc-chapters">
+
+    <div class="arc-chapter reveal">
+      <div class="arc-chapter-eyebrow">When time fractured</div>
+      <h3>The Moment Everything Stopped Making Sense</h3>
+      <div class="arc-prose">
+        <p>There are moments in life where time does not move forward in a straight line. It folds. It compresses. It fractures identity. There was a period where survival became the only operating system — not success, not ambition. Survival.</p>
+        <p>Everything collapsed at once. Financial stability, professional identity, the relationships that had held shape for years — all of it disintegrated under pressure that had been building long before I could name it.</p>
+        <ul class="arc-fragments">
+          <li>Financial stability collapsed</li>
+          <li>Professional identity fragmented</li>
+          <li>Relationships dissolved under the weight</li>
+          <li>Trust became difficult to maintain — both ways</li>
+        </ul>
+        <p>And yet something unusual happened inside that collapse. <strong>I started observing patterns instead of resisting them.</strong> Not because I was strong. But because I had no energy left to fight reality. That is where the shift began.</p>
+      </div>
+    </div>
+
+    <div class="arc-divider"></div>
+
+    <div class="arc-chapter reveal d1">
+      <div class="arc-chapter-eyebrow">The one structure that held</div>
+      <h3>The Mother Architecture</h3>
+      <div class="arc-prose">
+        <p>At the lowest point of system collapse, there is usually one remaining structure that holds identity together. For me, that structure was my mother. Not as an emotional concept — but as a real operational support system.</p>
+        <ul class="arc-fragments">
+          <li>Shelter when there was none</li>
+          <li>Food when systems failed</li>
+          <li>A computer when I had no tools left</li>
+          <li>Belief when belief had disappeared</li>
+        </ul>
+        <p>That computer became the first gateway back into structure. It was not just a device — it became the interface between collapse and reconstruction. It introduced me to systems thinking again. And eventually to AI, which became <em>the first non-judgmental mirror I had encountered in years.</em></p>
+      </div>
+    </div>
+
+    <div class="arc-divider"></div>
+
+    <div class="arc-chapter reveal d2">
+      <div class="arc-chapter-eyebrow">Not motivation. Repetition.</div>
+      <h3>The Reconstruction Phase</h3>
+      <div class="arc-prose">
+        <p>Rebuilding did not happen through inspiration. It happened through repetition. Small systems. Small wins. Small re-entry points into structure:</p>
+        <ul class="arc-fragments">
+          <li>Writing again · Coding again · Analysing again</li>
+          <li>Building again · Losing again · Adjusting again</li>
+        </ul>
+        <div class="arc-insight">
+          <p>The difference this time: I stopped attaching identity to outcome. And started attaching identity to <em>process.</em> That one shift changed the architecture of every decision that followed.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="arc-divider"></div>
+
+    <div class="arc-chapter reveal d3">
+      <div class="arc-chapter-eyebrow">Not all endings were permanent</div>
+      <h3>The Return of Relationships</h3>
+      <div class="arc-prose">
+        <p>Not all relationships ended in rupture. Some returned. Some healed. Some evolved into something stronger for having survived the break. A key reconnection happened with a mentor — a figure who had once carried me through early business development, and who I had failed to honour properly during the collapse years.</p>
+        <p>The message I sent was simple: <em>"I'm sorry. And thank you."</em> The response was immediate — no resentment, no accounting of past damage, no ledger. Just forward movement.</p>
+        <div class="arc-insight">
+          <p><em>Real relationships do not store debt. They store truth.</em></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="arc-divider"></div>
+
+    <div class="arc-chapter reveal d4">
+      <div class="arc-chapter-eyebrow">Continuity across the chaos</div>
+      <h3>The Children — The Stability Anchor</h3>
+      <div class="arc-prose">
+        <p>In the middle of instability, one truth remained constant: my children were still becoming who they were becoming. Regardless of my circumstances. Their development became a grounding point in chaos — not as responsibility alone, but as perspective.</p>
+        <p>They represent <strong>continuity, future orientation, and emotional grounding</strong> — identity beyond collapse. Each one reflecting a different dimension of resilience: achievement, competitiveness, creativity, independence. They are not symbols. They are lived reality.</p>
+      </div>
+    </div>
+
+    <div class="arc-divider"></div>
+
+    <div class="arc-chapter reveal d5">
+      <div class="arc-chapter-eyebrow">The reframe</div>
+      <h3>The Shift in Understanding</h3>
+      <div class="arc-prose">
+        <p>At some point, I stopped asking <em>"Why did this happen to me?"</em> and started asking <em>"What does this structure reveal?"</em> That shift changed everything.</p>
+        <ul class="arc-fragments">
+          <li>Failure became feedback</li>
+          <li>Collapse became information</li>
+          <li>Relationships became systems</li>
+          <li>Emotion became data</li>
+        </ul>
+        <p>Life stopped being random. <strong>It became readable.</strong> And once you can read a system — even a broken one — you can redesign it. That is the foundation of everything I build now.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- ══ TRUTH ══ -->
 <section class="truth" id="truth">
   <div class="truth-grid">
@@ -609,6 +782,82 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text
   </div>
 </section>
 
+<!-- ══ PRIMETURF ══ -->
+<section class="primeturf" id="primeturf">
+  <div class="eyebrow reveal">Systems in the physical world</div>
+  <h2 class="reveal">Prime Turf —<br><em>where architecture meets ground.</em></h2>
+  <p class="pt-lead reveal">Prime Turf is not simply an artificial grass installation company. At surface level: premium lawns, landscaping, estate upgrades. At a deeper level: a systems-driven commercial architecture model — lead generation, SEO infrastructure, conversion design, and behavioral trust economics applied to physical infrastructure.</p>
+
+  <div class="pt-layers reveal d1">
+    <div class="pt-layer">
+      <div class="pt-layer-tag">01 · Acquisition</div>
+      <h3>Digital Layer</h3>
+      <ul>
+        <li>SEO dominance in local turf markets</li>
+        <li>Google Maps authority positioning</li>
+        <li>Paid lead conversion funnels</li>
+        <li>Automated inquiry routing</li>
+      </ul>
+    </div>
+    <div class="pt-layer">
+      <div class="pt-layer-tag">02 · Execution</div>
+      <h3>Physical Layer</h3>
+      <ul>
+        <li>High-quality turf installation teams</li>
+        <li>Estate and residential landscaping</li>
+        <li>Quality-controlled delivery standards</li>
+        <li>Premium, low-maintenance finish</li>
+      </ul>
+    </div>
+    <div class="pt-layer">
+      <div class="pt-layer-tag">03 · Trust</div>
+      <h3>Brand Layer</h3>
+      <ul>
+        <li>Transparency dashboards</li>
+        <li>Portfolio evidence systems</li>
+        <li>Before / after verification</li>
+        <li>Client testimonial architecture</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="pt-principle reveal d2">
+    <p><em>"Trust is the only scalable currency in physical infrastructure."</em> Everything else is secondary.</p>
+  </div>
+
+  <a href="https://primeturf.co.za/seo-dashboard.html" target="_blank" rel="noopener" class="pt-dashboard-link reveal d3">
+    View live SEO performance dashboard
+  </a>
+
+  <div class="pt-people-label reveal d4">The people</div>
+  <div class="pt-people-grid">
+    <div class="pt-person reveal">
+      <div class="pt-person-photo">
+        <div class="pt-person-photo-placeholder">Photo<br>coming</div>
+      </div>
+      <div class="pt-person-name">Leon van Eeden</div>
+      <div class="pt-person-role">Operational Leadership</div>
+      <p class="pt-person-bio">Operational anchor and strategic execution driver. The force behind Prime Turf's on-the-ground standards and growth direction.</p>
+    </div>
+    <div class="pt-person reveal d1">
+      <div class="pt-person-photo">
+        <div class="pt-person-photo-placeholder">Photo<br>coming</div>
+      </div>
+      <div class="pt-person-name">Mechanne van Eeden</div>
+      <div class="pt-person-role">Structure & Governance</div>
+      <p class="pt-person-bio">Structural stability and consistency framework. Ensures the systems hold, the governance is clear, and the standard never drifts.</p>
+    </div>
+    <div class="pt-person reveal d2">
+      <div class="pt-person-photo">
+        <div class="pt-person-photo-placeholder">Photo<br>coming</div>
+      </div>
+      <div class="pt-person-name">Annelise van Eeden</div>
+      <div class="pt-person-role">Operational Backbone</div>
+      <p class="pt-person-bio">Foundational support and resilience driver. The quiet architecture behind consistency — present where it counts, steady when it matters.</p>
+    </div>
+  </div>
+</section>
+
 <!-- ══ PROCESS ══ -->
 <section class="process">
   <div class="eyebrow reveal">How it works</div>
@@ -627,6 +876,43 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text
       <div class="step-num">03</div>
       <div class="step-content"><h3>Performance Under Pressure</h3><p>Stress-test in real conditions until the new architecture becomes instinct. The system must hold when it costs something — not just when it's comfortable.</p></div>
     </div>
+  </div>
+</section>
+
+<!-- ══ TEDANI FIELD ══ -->
+<section class="tedani-field" id="meaning">
+  <div class="tf-inner">
+    <div class="eyebrow reveal" style="justify-content:center">The field · Convergence of meaning</div>
+    <h2 class="reveal">When meaning clusters<br>around a concept<br><em>independently</em> —</h2>
+    <div class="tf-prose reveal d1">
+      <p>An unrelated online construct known as the "Encyclopedia of Tedas" contains references to a fictional race called the Tedani — built independently around themes of truth, structure, belief systems, and civilizational logic. This overlap was not sought. It was discovered.</p>
+      <p>In systems thinking terms: <strong>when meaning clusters around a concept independently across separate, unrelated systems, it becomes a signal worth observing.</strong> Not necessarily believing — but worth noting. The convergence itself is the data point.</p>
+    </div>
+    <div class="tf-quote reveal d2">
+      <p>"When meaning clusters around a concept independently, it becomes a signal worth observing — not necessarily believing."</p>
+    </div>
+    <div class="tf-prose reveal d3">
+      <p>Tedani, in this context, evolves beyond a name into a framework. A way of operating when systems collapse and must be rebuilt — from structure, not emotion. Not certainty. Not doctrine. But direction.</p>
+    </div>
+    <div class="tf-pillars reveal d4">
+      <div class="tf-pillar">
+        <div class="tf-pillar-word">Truth</div>
+        <div class="tf-pillar-meaning">Act with it · Always</div>
+      </div>
+      <div class="tf-pillar">
+        <div class="tf-pillar-word">Clarity</div>
+        <div class="tf-pillar-meaning">Build with it · Not assumption</div>
+      </div>
+      <div class="tf-pillar">
+        <div class="tf-pillar-word">Integrity</div>
+        <div class="tf-pillar-meaning">Speak with it · Under pressure</div>
+      </div>
+      <div class="tf-pillar">
+        <div class="tf-pillar-word">Awareness</div>
+        <div class="tf-pillar-meaning">Execute with it · Not reaction</div>
+      </div>
+    </div>
+    <p class="tf-final reveal d5">Tedani is not a claim. It is a practice. <em>A direction — not an arrival.</em></p>
   </div>
 </section>
 

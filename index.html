@@ -354,8 +354,8 @@ nav.scrolled{background:rgba(9,8,5,.97);backdrop-filter:blur(12px)}
 .pt-person-bio{font-size:13px;color:var(--smoke);line-height:1.7;font-weight:300}
 
 /* ── TEDANI FIELD ── */
-.tedani-field{background:var(--black);padding:clamp(60px,10vw,140px) clamp(28px,7vw,100px);border-top:1px solid rgba(196,154,58,.08);text-align:center}
-.tf-inner{max-width:680px;margin:0 auto}
+.tedani-field{background:var(--black);padding:clamp(60px,10vw,140px) 0;border-top:1px solid rgba(196,154,58,.08)}
+.tf-inner{max-width:680px;margin:0 auto;text-align:center;padding:0 clamp(28px,7vw,100px)}
 .tf-inner h2{font-family:'Playfair Display',serif;font-size:clamp(24px,3.8vw,40px);font-weight:700;font-style:italic;color:var(--ash);margin-bottom:32px;line-height:1.3}
 .tf-inner h2 em{color:var(--gold)}
 .tf-prose{display:flex;flex-direction:column;gap:18px;text-align:left;margin-bottom:40px}
@@ -370,6 +370,43 @@ nav.scrolled{background:rgba(9,8,5,.97);backdrop-filter:blur(12px)}
 .tf-pillar-meaning{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--smoke)}
 .tf-final{margin-top:48px;font-size:15px;color:var(--smoke);line-height:1.9;font-weight:300;font-style:italic}
 .tf-final em{color:var(--gold)}
+
+/* ── CONVERGENCE GRID ── */
+.tf-convergences{max-width:1100px;margin:64px auto 0;padding:0 clamp(28px,7vw,100px);text-align:left}
+.tf-conv-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.35em;text-transform:uppercase;color:var(--ember);margin-bottom:28px;display:flex;align-items:center;gap:14px}
+.tf-conv-label::before{content:'';display:block;width:24px;height:1px;background:var(--ember);flex-shrink:0}
+.tf-conv-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+@media(max-width:680px){.tf-conv-grid{grid-template-columns:1fr}}
+.tf-conv-item{background:var(--deep);padding:28px 32px 32px}
+.tf-conv-side{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.28em;text-transform:uppercase;margin-bottom:10px}
+.tf-conv-side.fict{color:var(--smoke)}
+.tf-conv-side.real{color:var(--gold)}
+.tf-conv-miva{font-family:'Playfair Display',serif;font-size:13px;font-style:italic;color:var(--ember);margin-bottom:10px}
+.tf-conv-body{font-size:13px;color:var(--mid);line-height:1.88;font-weight:300}
+.tf-conv-body strong{color:var(--ash);font-weight:500}
+.tf-conv-body em{color:var(--gold);font-style:italic}
+
+/* ── KO GANAOTH ── */
+.tf-ko{max-width:1100px;margin:4px auto 0;padding:0 clamp(28px,7vw,100px)}
+.tf-ko-inner{background:var(--deep);border:1px solid rgba(196,154,58,.2);padding:44px 48px;position:relative;overflow:hidden}
+.tf-ko-bg{position:absolute;right:-10px;top:50%;transform:translateY(-50%);font-family:'Playfair Display',serif;font-size:clamp(80px,14vw,140px);font-weight:900;font-style:italic;color:rgba(196,154,58,.05);pointer-events:none;line-height:1;user-select:none}
+.tf-ko-eyebrow{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.35em;text-transform:uppercase;color:var(--ember);margin-bottom:14px;position:relative}
+.tf-ko-title{font-family:'Playfair Display',serif;font-size:clamp(18px,2.8vw,26px);font-weight:700;color:var(--ash);margin-bottom:18px;line-height:1.3;position:relative;max-width:560px}
+.tf-ko-title em{font-style:italic;color:var(--gold)}
+.tf-ko-body{font-size:14px;color:var(--mid);line-height:1.95;font-weight:300;max-width:600px;position:relative}
+.tf-ko-body p+p{margin-top:14px}
+.tf-ko-body strong{color:var(--ash);font-weight:500}
+.tf-ko-body em{color:var(--gold);font-style:italic}
+@media(max-width:600px){.tf-ko-inner{padding:28px 24px}}
+
+/* ── SANSKRIT LAYER ── */
+.tf-sanskrit{max-width:1100px;margin:4px auto 64px;padding:0 clamp(28px,7vw,100px)}
+.tf-sanskrit-inner{background:var(--soil);border-left:2px solid rgba(196,154,58,.2);padding:28px 32px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+@media(max-width:520px){.tf-sanskrit-inner{grid-template-columns:1fr}}
+.tf-sanskrit-word{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,38px);font-weight:900;font-style:italic;color:rgba(196,154,58,.25);line-height:1;white-space:nowrap}
+.tf-sanskrit-body{font-size:13px;color:var(--smoke);line-height:1.88}
+.tf-sanskrit-body strong{color:var(--mid);font-weight:500}
+.tf-sanskrit-body em{color:var(--ember);font-style:italic}
 
 /* ── ARC PHOTOS ── */
 .arc-img-break{margin:28px 0;position:relative;overflow:hidden}
@@ -1150,36 +1187,140 @@ footer p{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text
 <section class="tedani-field" id="meaning">
   <div class="tf-inner">
     <div class="eyebrow reveal" style="justify-content:center">The field · Convergence of meaning</div>
-    <h2 class="reveal">When meaning clusters<br>around a concept<br><em>independently</em> —</h2>
+    <h2 class="reveal">Three sources.<br>One name.<br><em>No connection between them.</em></h2>
     <div class="tf-prose reveal d1">
-      <p>An unrelated online construct known as the "Encyclopedia of Tedas" contains references to a fictional race called the Tedani — built independently around themes of truth, structure, belief systems, and civilizational logic. This overlap was not sought. It was discovered.</p>
-      <p>In systems thinking terms: <strong>when meaning clusters around a concept independently across separate, unrelated systems, it becomes a signal worth observing.</strong> Not necessarily believing — but worth noting. The convergence itself is the data point.</p>
+      <p>A child speaks a name in a moment no one staged. A Tshivenda root confirms the meaning — <em>Tendani: Believe</em>. And somewhere in an unrelated corner of the internet, an "Encyclopedia of Tedas" exists — a fictional cosmology built around a race called the Tedani, constructed by a stranger who never met Stiaan du Plessis.</p>
+      <p>Three independent sources. Zero coordination. <strong>The same name, the same values, the same direction — arrived at separately.</strong> In systems thinking, when meaning clusters around a concept across unconnected systems, it becomes a signal worth noting. Not necessarily believing. But the convergence itself is the data point.</p>
     </div>
     <div class="tf-quote reveal d2">
-      <p>"When meaning clusters around a concept independently, it becomes a signal worth observing — not necessarily believing."</p>
+      <p>"The coincidence is not the point. The pattern is. And patterns this precise — across language, myth, and lived reality — are worth sitting with."</p>
     </div>
-    <div class="tf-prose reveal d3">
-      <p>Tedani, in this context, evolves beyond a name into a framework. A way of operating when systems collapse and must be rebuilt — from structure, not emotion. Not certainty. Not doctrine. But direction.</p>
+  </div>
+
+  <!-- Convergence Grid -->
+  <div class="tf-convergences reveal d2">
+    <div class="tf-conv-label">The overlaps · Fictional Tedas vs lived reality</div>
+    <div class="tf-conv-grid">
+
+      <!-- Row 1 -->
+      <div class="tf-conv-item">
+        <div class="tf-conv-side fict">Encyclopedia of Tedas · Fictional</div>
+        <div class="tf-conv-miva">Ko Ganaoth — The Collapse Before Clarity</div>
+        <div class="tf-conv-body">The Tedani mythology describes <strong>Ko Ganaoth</strong> as a cosmic event — a necessary unravelling before structure can be rebuilt. Not a failure. A prerequisite. The civilisation must fall before it can be reordered on truer foundations.</div>
+      </div>
+      <div class="tf-conv-item">
+        <div class="tf-conv-side real">Stiaan du Plessis · Real</div>
+        <div class="tf-conv-miva">2021 — The year everything broke</div>
+        <div class="tf-conv-body">2021 was not a setback. It was <em>Ko Ganaoth</em> — a complete unravelling of home, health, identity, and direction. The name arrived in the middle of that collapse. The mythology had already named what was happening.</div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="tf-conv-item">
+        <div class="tf-conv-side fict">Encyclopedia of Tedas · Fictional</div>
+        <div class="tf-conv-miva">Fisate Hu Lithu — The Body as Archive</div>
+        <div class="tf-conv-body">In Teda lore, <strong>Fisate Hu Lithu</strong> holds that the physical body carries the record of every cost paid — that scars are data, not damage. The body is read like a document, not repaired like a machine.</div>
+      </div>
+      <div class="tf-conv-item">
+        <div class="tf-conv-side real">Stiaan du Plessis · Real</div>
+        <div class="tf-conv-miva">The injuries — documented, not hidden</div>
+        <div class="tf-conv-body">The injuries were not erased from this record. They were photographed, named, and placed in the arc — because the body tells the truth even when the mind resists it. <em>Cost paid. Lesson encoded.</em></div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="tf-conv-item">
+        <div class="tf-conv-side fict">Encyclopedia of Tedas · Fictional</div>
+        <div class="tf-conv-miva">Yajenol — Named Into Being</div>
+        <div class="tf-conv-body">The Tedani believe in <strong>Yajenol</strong> — the act of naming something into its purpose. A name spoken at the right moment, in the right context, does not describe. It initiates. The word and the thing become the same event.</div>
+      </div>
+      <div class="tf-conv-item">
+        <div class="tf-conv-side real">Stiaan du Plessis · Real</div>
+        <div class="tf-conv-miva">September 12, 2021 · 15:54 · A child speaks</div>
+        <div class="tf-conv-body">A child named a person into a new identity without knowing what she was doing. <em>Tedani.</em> The Tshivenda root confirms: Tendani — Believe. The mythology had already called it Yajenol. <strong>Three systems. One event.</strong></div>
+      </div>
+
+      <!-- Row 4 -->
+      <div class="tf-conv-item">
+        <div class="tf-conv-side fict">Encyclopedia of Tedas · Fictional</div>
+        <div class="tf-conv-miva">Faith as structural load-bearing element</div>
+        <div class="tf-conv-body">In Teda cosmology, faith is not a feeling — it is a <strong>structural component</strong>. The civilisation does not function without it. It is the unseen infrastructure beneath every visible system. Remove it and the architecture collapses regardless of surface stability.</div>
+      </div>
+      <div class="tf-conv-item">
+        <div class="tf-conv-side real">Stiaan du Plessis · Real</div>
+        <div class="tf-conv-miva">Tendani — the Tshivenda root</div>
+        <div class="tf-conv-body">Three independent South African linguistic submissions confirm: <em>Tendani</em> = "Believe me" / "Believe in God." The name given in 2021 literally means faith. The mythology structuralised it. The language confirmed it. <strong>The life embodied it.</strong></div>
+      </div>
+
+      <!-- Row 5 -->
+      <div class="tf-conv-item">
+        <div class="tf-conv-side fict">Encyclopedia of Tedas · Fictional</div>
+        <div class="tf-conv-miva">Absolute Truth as first pillar</div>
+        <div class="tf-conv-body">The Teda codex lists <strong>absolute truth</strong> as the load-bearing first pillar — not kindness, not success, not power. Truth. The claim: a civilisation that operates on accurate information survives longer than one that optimises for comfort.</div>
+      </div>
+      <div class="tf-conv-item">
+        <div class="tf-conv-side real">Stiaan du Plessis · Real</div>
+        <div class="tf-conv-miva">Truth — the first principle that held</div>
+        <div class="tf-conv-body">Every system that failed in 2021 was built on distortion — narratives, avoidance, managed perception. What survived was only what was true. <em>The Teda had already codified this.</em> The lesson arrived through lived consequence.</div>
+      </div>
+
+      <!-- Row 6 -->
+      <div class="tf-conv-item">
+        <div class="tf-conv-side fict">Encyclopedia of Tedas · Fictional</div>
+        <div class="tf-conv-miva">Five Faisi — The Pillars of civilisation</div>
+        <div class="tf-conv-body">The Teda system is organised around <strong>Five Faisi</strong> — structural values that hold a civilisation upright when external conditions collapse. They are not aspirational. They are operational. The Tedani do not hope for them — they execute them.</div>
+      </div>
+      <div class="tf-conv-item">
+        <div class="tf-conv-side real">Stiaan du Plessis · Real</div>
+        <div class="tf-conv-miva">Four pillars — arrived at independently</div>
+        <div class="tf-conv-body">Truth. Clarity. Integrity. Awareness. Four operating principles constructed from collapse — not from aspiration. <em>The Teda named five. This framework names four.</em> The architecture rhymes. No collaboration. No awareness of each other. <strong>The same blueprint.</strong></div>
+      </div>
+
     </div>
+  </div>
+
+  <!-- Ko Ganaoth Feature Block -->
+  <div class="tf-ko reveal d3">
+    <div class="tf-ko-inner">
+      <div class="tf-ko-bg">2021</div>
+      <div class="tf-ko-eyebrow">Ko Ganaoth · The Teda concept of necessary collapse</div>
+      <div class="tf-ko-title">The mythology already had a word<br>for what happened in <em>2021</em>.</div>
+      <div class="tf-ko-body">
+        <p>Ko Ganaoth does not mean failure. In Teda cosmology it means <strong>the event that must occur before reconstruction is possible</strong> — the collapse that strips away the false structure so the true architecture can be built. You cannot skip it. You cannot shorten it. You can only move through it with as much integrity as you can carry.</p>
+        <p>The name arrived in the middle of this. A child spoke it. The mythology had already written it. The language had already translated it. <em>Three independent systems pointing at the same moment in the same life.</em> If that is coincidence, it is the most precisely calibrated coincidence on record.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sanskrit Layer -->
+  <div class="tf-sanskrit reveal d3">
+    <div class="tf-sanskrit-inner">
+      <div class="tf-sanskrit-word">Tedanī</div>
+      <div class="tf-sanskrit-body">
+        <strong>Sanskrit root · tedanī</strong> — "clotted blood." The coagulation that forms after a wound. Not the wound itself. Not the scar. The specific moment when bleeding stops and the body begins to rebuild. <em>The exact biological metaphor for what 2021 was.</em> A fourth source. Still no connection. Still the same meaning.
+      </div>
+    </div>
+  </div>
+
+  <!-- Pillars + Close -->
+  <div class="tf-inner">
     <div class="tf-pillars reveal d4">
       <div class="tf-pillar">
         <div class="tf-pillar-word">Truth</div>
-        <div class="tf-pillar-meaning">Act with it · Always</div>
+        <div class="tf-pillar-meaning">Act with it · Always · <em>First Faisi</em></div>
       </div>
       <div class="tf-pillar">
         <div class="tf-pillar-word">Clarity</div>
-        <div class="tf-pillar-meaning">Build with it · Not assumption</div>
+        <div class="tf-pillar-meaning">Build with it · Not assumption · <em>Second Faisi</em></div>
       </div>
       <div class="tf-pillar">
         <div class="tf-pillar-word">Integrity</div>
-        <div class="tf-pillar-meaning">Speak with it · Under pressure</div>
+        <div class="tf-pillar-meaning">Speak with it · Under pressure · <em>Third Faisi</em></div>
       </div>
       <div class="tf-pillar">
         <div class="tf-pillar-word">Awareness</div>
-        <div class="tf-pillar-meaning">Execute with it · Not reaction</div>
+        <div class="tf-pillar-meaning">Execute with it · Not reaction · <em>Fourth Faisi</em></div>
       </div>
     </div>
-    <p class="tf-final reveal d5">Tedani is not a claim. It is a practice. <em>A direction — not an arrival.</em></p>
+    <p class="tf-final reveal d5">Three sources. One name. The same values — arrived at independently, across language, mythology, and lived collapse. Tedani is not a claim. It is a practice. <em>A direction — not an arrival.</em></p>
   </div>
 </section>
 
